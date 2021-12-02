@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+ int n;
+    scanf("%d",&n);
+    for(int k=0;k<n;k++)
+    {
+        int a,b;
+        scanf("%d %d",&a,&b);
+        int c=a,d=0;
+        while(c>b)
+        {
+            d=c%b;
+            c=c/b;
+            a+=c;
+            c=c+d;
+            d=0;
+        }
+        if((c+d)>=b)
+            a+=(c+d)/b;
+        printf("%d\n",a);
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
