@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int l;
+        scanf("%d",&l);
+int t;
+    scanf("%d",&t);
+    for(int k=0;k<t;k++)
+    {
+        int a,b;
+        scanf("%d %d",&a,&b);
+        if(a<l||b<l)
+            printf("UPLOAD ANOTHER");
+        else 
+        {
+            if(a==b)
+                printf("ACCEPTED");
+        else
+            printf("CROP IT");
+        }
+        printf("\n");
+    }
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */    
+    return 0;
+}
